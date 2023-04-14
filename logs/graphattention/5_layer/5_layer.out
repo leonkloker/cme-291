@@ -1,0 +1,83 @@
+2023-03-15 07:21:28.024679: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-03-15 07:21:28.316826: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-03-15 07:21:29.633193: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/home/leonkl/anaconda3/envs/XP/lib/:/home/leonkl/anaconda3/envs/XPLORE/lib/
+2023-03-15 07:21:29.633839: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/home/leonkl/anaconda3/envs/XP/lib/:/home/leonkl/anaconda3/envs/XPLORE/lib/
+2023-03-15 07:21:29.634100: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-03-15 07:21:31.017710: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/home/leonkl/anaconda3/envs/XP/lib/:/home/leonkl/anaconda3/envs/XPLORE/lib/
+2023-03-15 07:21:31.017797: W tensorflow/compiler/xla/stream_executor/cuda/cuda_driver.cc:265] failed call to cuInit: UNKNOWN ERROR (303)
+2023-03-15 07:21:31.017833: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (icme-gpu1): /proc/driver/nvidia/version does not exist
+2023-03-15 07:22:38.771015: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/leonkl/anaconda3/envs/XP/lib/python3.9/site-packages/keras/initializers/initializers_v2.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values  each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initalizer instance more than once.
+  warnings.warn(
+GPUs:  0
+Epoch 1/10
+11620/11620 - 5013s - loss: 0.4085 - mean_squared_error: 0.0182 - mean_absolute_error: 0.0831 - val_loss: 0.3991 - val_mean_squared_error: 0.0149 - val_mean_absolute_error: 0.0708 - 5013s/epoch - 431ms/step
+Epoch 2/10
+11620/11620 - 4800s - loss: 0.3970 - mean_squared_error: 0.0150 - mean_absolute_error: 0.0719 - val_loss: 0.4047 - val_mean_squared_error: 0.0160 - val_mean_absolute_error: 0.0763 - 4800s/epoch - 413ms/step
+Epoch 3/10
+11620/11620 - 3875s - loss: 0.3946 - mean_squared_error: 0.0144 - mean_absolute_error: 0.0690 - val_loss: 0.4007 - val_mean_squared_error: 0.0151 - val_mean_absolute_error: 0.0742 - 3875s/epoch - 333ms/step
+Epoch 4/10
+11620/11620 - 3838s - loss: 0.3937 - mean_squared_error: 0.0141 - mean_absolute_error: 0.0676 - val_loss: 0.3977 - val_mean_squared_error: 0.0143 - val_mean_absolute_error: 0.0701 - 3838s/epoch - 330ms/step
+Epoch 5/10
+11620/11620 - 3313s - loss: 0.3927 - mean_squared_error: 0.0139 - mean_absolute_error: 0.0666 - val_loss: 0.3967 - val_mean_squared_error: 0.0140 - val_mean_absolute_error: 0.0702 - 3313s/epoch - 285ms/step
+Epoch 6/10
+11620/11620 - 3305s - loss: 0.3923 - mean_squared_error: 0.0138 - mean_absolute_error: 0.0658 - val_loss: 0.3968 - val_mean_squared_error: 0.0143 - val_mean_absolute_error: 0.0719 - 3305s/epoch - 284ms/step
+Epoch 7/10
+11620/11620 - 3273s - loss: 0.3917 - mean_squared_error: 0.0136 - mean_absolute_error: 0.0650 - val_loss: 0.3991 - val_mean_squared_error: 0.0144 - val_mean_absolute_error: 0.0726 - 3273s/epoch - 282ms/step
+Epoch 8/10
+11620/11620 - 2598s - loss: 0.3916 - mean_squared_error: 0.0136 - mean_absolute_error: 0.0647 - val_loss: 0.3968 - val_mean_squared_error: 0.0144 - val_mean_absolute_error: 0.0718 - 2598s/epoch - 224ms/step
+Epoch 9/10
+11620/11620 - 2563s - loss: 0.3914 - mean_squared_error: 0.0135 - mean_absolute_error: 0.0641 - val_loss: 0.3971 - val_mean_squared_error: 0.0136 - val_mean_absolute_error: 0.0706 - 2563s/epoch - 221ms/step
+Epoch 10/10
+11620/11620 - 2639s - loss: 0.3912 - mean_squared_error: 0.0133 - mean_absolute_error: 0.0638 - val_loss: 0.3979 - val_mean_squared_error: 0.0142 - val_mean_absolute_error: 0.0720 - 2639s/epoch - 227ms/step
+Model: "graph_attention_network"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ gat_conv (GATConv)          multiple                  130       
+                                                                 
+ gat_conv_1 (GATConv)        multiple                  130       
+                                                                 
+ gat_conv_2 (GATConv)        multiple                  130       
+                                                                 
+ gat_conv_3 (GATConv)        multiple                  130       
+                                                                 
+ gat_conv_4 (GATConv)        multiple                  130       
+                                                                 
+ dense (Dense)               multiple                  110       
+                                                                 
+ dense_1 (Dense)             multiple                  110       
+                                                                 
+ dense_2 (Dense)             multiple                  110       
+                                                                 
+ dense_3 (Dense)             multiple                  110       
+                                                                 
+ dense_4 (Dense)             multiple                  110       
+                                                                 
+ global_avg_pool (GlobalAvgP  multiple                 0         
+ ool)                                                            
+                                                                 
+ layer_normalization (LayerN  multiple                 20        
+ ormalization)                                                   
+                                                                 
+ concatenate (Concatenate)   multiple                  0         
+                                                                 
+ dense_5 (Dense)             multiple                  2176      
+                                                                 
+ dense_6 (Dense)             multiple                  16512     
+                                                                 
+ dense_7 (Dense)             multiple                  129       
+                                                                 
+ dense_8 (Dense)             multiple                  84        
+                                                                 
+ dense_9 (Dense)             multiple                  156       
+                                                                 
+ dense_10 (Dense)            multiple                  78        
+                                                                 
+=================================================================
+Total params: 20,355
+Trainable params: 20,355
+Non-trainable params: 0
+_________________________________________________________________
